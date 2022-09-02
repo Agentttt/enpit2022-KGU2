@@ -1,0 +1,86 @@
+-- BP 7.1.6 content: ModelClass syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO O_OBJ
+	VALUES ("8b876cd4-7ccb-42ea-884e-0eb4e3ba88ba",
+	'Waypoint',
+	4,
+	'Waypoint',
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_NBATTR
+	VALUES ("715b7262-89fa-4edb-8580-ba4a7f5e2bb3",
+	"8b876cd4-7ccb-42ea-884e-0eb4e3ba88ba");
+INSERT INTO O_BATTR
+	VALUES ("715b7262-89fa-4edb-8580-ba4a7f5e2bb3",
+	"8b876cd4-7ccb-42ea-884e-0eb4e3ba88ba");
+INSERT INTO O_ATTR
+	VALUES ("715b7262-89fa-4edb-8580-ba4a7f5e2bb3",
+	"8b876cd4-7ccb-42ea-884e-0eb4e3ba88ba",
+	"00000000-0000-0000-0000-000000000000",
+	'x',
+	'',
+	'',
+	'x',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000003",
+	'',
+	'');
+INSERT INTO O_NBATTR
+	VALUES ("3a386059-6802-451b-a274-a2fe348c3a28",
+	"8b876cd4-7ccb-42ea-884e-0eb4e3ba88ba");
+INSERT INTO O_BATTR
+	VALUES ("3a386059-6802-451b-a274-a2fe348c3a28",
+	"8b876cd4-7ccb-42ea-884e-0eb4e3ba88ba");
+INSERT INTO O_ATTR
+	VALUES ("3a386059-6802-451b-a274-a2fe348c3a28",
+	"8b876cd4-7ccb-42ea-884e-0eb4e3ba88ba",
+	"715b7262-89fa-4edb-8580-ba4a7f5e2bb3",
+	'y',
+	'',
+	'',
+	'y',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000003",
+	'',
+	'');
+INSERT INTO O_NBATTR
+	VALUES ("a877b80b-b045-4b67-bdb0-8c95b27b8fd1",
+	"8b876cd4-7ccb-42ea-884e-0eb4e3ba88ba");
+INSERT INTO O_BATTR
+	VALUES ("a877b80b-b045-4b67-bdb0-8c95b27b8fd1",
+	"8b876cd4-7ccb-42ea-884e-0eb4e3ba88ba");
+INSERT INTO O_ATTR
+	VALUES ("a877b80b-b045-4b67-bdb0-8c95b27b8fd1",
+	"8b876cd4-7ccb-42ea-884e-0eb4e3ba88ba",
+	"3a386059-6802-451b-a274-a2fe348c3a28",
+	'z',
+	'',
+	'',
+	'z',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000003",
+	'',
+	'');
+INSERT INTO O_ID
+	VALUES (0,
+	"8b876cd4-7ccb-42ea-884e-0eb4e3ba88ba");
+INSERT INTO O_ID
+	VALUES (1,
+	"8b876cd4-7ccb-42ea-884e-0eb4e3ba88ba");
+INSERT INTO O_ID
+	VALUES (2,
+	"8b876cd4-7ccb-42ea-884e-0eb4e3ba88ba");
+INSERT INTO PE_PE
+	VALUES ("8b876cd4-7ccb-42ea-884e-0eb4e3ba88ba",
+	1,
+	"c7bc1f0d-acc5-45cd-afb5-da93bea1c897",
+	"00000000-0000-0000-0000-000000000000",
+	4);
+INSERT INTO EP_PKG_PROXY
+	VALUES ("c7bc1f0d-acc5-45cd-afb5-da93bea1c897",
+	"00000000-0000-0000-0000-000000000000",
+	"d923df31-2d4f-4454-ba3a-3347665a758b",
+	'Control',
+	'',
+	0,
+	'../Control.xtuml');

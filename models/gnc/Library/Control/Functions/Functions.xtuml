@@ -1,0 +1,123 @@
+-- BP 7.1.6 content: Package syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO EP_PKG
+	VALUES ("c266a8d5-aa61-43f4-9d01-7e2baedb603e",
+	"00000000-0000-0000-0000-000000000000",
+	"d923df31-2d4f-4454-ba3a-3347665a758b",
+	'Functions',
+	'',
+	0);
+INSERT INTO GD_MD
+	VALUES ("875a0e4e-f520-435b-a5c7-d4903f070f2a",
+	112,
+	"c266a8d5-aa61-43f4-9d01-7e2baedb603e",
+	108,
+	0,
+	0,
+	1,
+	1,
+	1,
+	12,
+	1,
+	0,
+	0,
+	0,
+	0,
+	0,
+	'4.1.17',
+	'gnc::Library::Control::Functions');
+INSERT INTO DIM_DIA
+	VALUES ("875a0e4e-f520-435b-a5c7-d4903f070f2a",
+	'',
+	1.000000,
+	0.000000,
+	0.000000,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO S_SYNC
+	VALUES ("6da296e0-cfc3-41ea-b021-54b367d07943",
+	"00000000-0000-0000-0000-000000000000",
+	'setup',
+	'',
+	'create object instance ctrl of Controller;
+generate Controller1:''start'' to ctrl;
+
+create object instance wp1 of Waypoint;
+wp1.x = 3;
+wp1.y = 3;
+wp1.z = 1;
+relate ctrl to wp1 across R1.''begin with'';
+relate ctrl to wp1 across R3.''is flying to'';
+
+create object instance wp2 of Waypoint;
+wp2.x = -3;
+wp2.y = 3;
+wp2.z = 1;
+relate wp1 to wp2 across R2.''follows'';
+
+create object instance wp3 of Waypoint;
+wp3.x = -3;
+wp3.y = -3;
+wp3.z = 1;
+relate wp2 to wp3 across R2.''follows'';
+
+create object instance wp4 of Waypoint;
+wp4.x = 3;
+wp4.y = -3;
+wp4.z = 1;
+relate wp3 to wp4 across R2.''follows'';
+
+create object instance wp5 of Waypoint;
+wp5.x = 0;
+wp5.y = 0;
+wp5.z = 1;
+relate wp4 to wp5 across R2.''follows'';',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'',
+	0);
+INSERT INTO PE_PE
+	VALUES ("6da296e0-cfc3-41ea-b021-54b367d07943",
+	1,
+	"c266a8d5-aa61-43f4-9d01-7e2baedb603e",
+	"00000000-0000-0000-0000-000000000000",
+	1);
+INSERT INTO S_SYNC
+	VALUES ("d4286997-3eda-423c-b69d-a082f734861f",
+	"00000000-0000-0000-0000-000000000000",
+	'halt',
+	'',
+	'select any ctrl from instances of Controller;
+generate Controller3:''halt'' to ctrl;
+',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'',
+	0);
+INSERT INTO PE_PE
+	VALUES ("d4286997-3eda-423c-b69d-a082f734861f",
+	1,
+	"c266a8d5-aa61-43f4-9d01-7e2baedb603e",
+	"00000000-0000-0000-0000-000000000000",
+	1);
+INSERT INTO PE_PE
+	VALUES ("c266a8d5-aa61-43f4-9d01-7e2baedb603e",
+	1,
+	"00000000-0000-0000-0000-000000000000",
+	"0d80503a-3f90-42a8-a2a9-2f52ccd4308f",
+	7);
+INSERT INTO C_C_PROXY
+	VALUES ("0d80503a-3f90-42a8-a2a9-2f52ccd4308f",
+	"00000000-0000-0000-0000-000000000000",
+	"00000000-0000-0000-0000-000000000000",
+	'Control',
+	'',
+	0,
+	"00000000-0000-0000-0000-000000000000",
+	0,
+	'',
+	'../Control.xtuml');
+INSERT INTO S_SYS_PROXY
+	VALUES ("d923df31-2d4f-4454-ba3a-3347665a758b",
+	'gnc',
+	1,
+	'../../../gnc.xtuml');
